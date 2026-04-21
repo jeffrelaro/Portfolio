@@ -1,0 +1,158 @@
+body{
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header{
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(green, lightgreen);
+    color: white;
+}
+
+
+nav{
+    background-color: #333;
+    padding: 15px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 0 20px;
+    color: #b8e6b3;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+nav a:hover{
+    background: linear-gradient(#11998e, #38ef7d);
+    color: white;
+}
+
+section{
+    padding: 30px;
+    background-color: #fffffff7;
+    box-shadow: 0 10px 40px #00800026;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid gray;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    background: linear-gradient(green, lightgreen);
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#projects a{
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 15px;
+    background: linear-gradient(green, lightgreen);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+form{
+   display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea{
+    padding: 18px;
+    border: 2px solid #e1e8ed;
+    border-radius: 12px;
+}
+
+input[type="submit"] {
+    background: linear-gradient(green, lightgreen);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #00e04b;
+}
+
+footer{
+    padding: 25px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 30px 15px;
+    }
+    
+    nav {
+        padding: 5px 10px;
+        display: flex; 
+    }
+    
+    nav a {
+        margin: 8px 0;
+        padding: 10px 15px;
+        width: 100%;
+    }
+    
+    section {
+        padding: 20px 15px;
+    }
+    
+    li {
+        display: block;
+        margin: 8px auto;
+        padding: 12px 20px;
+        width: 20%;
+    }
+    
+    #projects a {
+        display: block;
+        margin: 10px auto;
+        padding: 12px 20px;
+        width: 20%;
+    }
+    
+    form {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    input, textarea {
+        padding: 15px;
+    }
+    
+    footer {
+        padding: 20px 15px;
+    }
+}
