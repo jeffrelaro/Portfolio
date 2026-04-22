@@ -45,9 +45,20 @@ section{
 
 h2{
     text-align: center;
-    padding-bottom: 15px;
     margin-bottom: 25px;
-    border-bottom: 3px solid gray;
+    position: relative;
+}
+
+h2::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(green, lightgreen);
+
 }
 
 ul {
@@ -110,49 +121,38 @@ footer{
 
 
 @media (max-width: 768px) {
-    header {
+    header{
         padding: 30px 15px;
     }
-    
-    nav {
-        padding: 5px 10px;
-        display: flex; 
+
+    nav{
+        padding: 10px;
     }
-    
-    nav a {
+
+    nav a{
+        display: block;
         margin: 8px 0;
-        padding: 10px 15px;
-        width: 100%;
-    }
-    
-    section {
-        padding: 20px 15px;
-    }
-    
-    li {
-        display: block;
-        margin: 8px auto;
         padding: 12px 20px;
-        width: 20%;
+        width: 80%;
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
     }
-    
-    #projects a {
+
+    section{
+        padding: 25px 10px;
+        margin: 10px;
+    }
+
+    li, #projects a{
         display: block;
+        width: 250px;
+        max-width: 30%;
         margin: 10px auto;
-        padding: 12px 20px;
-        width: 20%;
     }
-    
-    form {
-        max-width: 100%;
+
+    form{
         padding: 0 15px;
     }
     
-    input, textarea {
-        padding: 15px;
-    }
-    
-    footer {
-        padding: 20px 15px;
-    }
 }
